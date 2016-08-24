@@ -1,8 +1,10 @@
 package com.yztc.wl.helloword;
 
-import android.os.PersistableBundle;
+
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,8 +15,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Nullable
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public View onCreatePanelView(int featureId) {
+        return super.onCreatePanelView(featureId);
     }
 }
